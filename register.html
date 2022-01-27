@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -272,7 +272,11 @@
 
     <script>
         $(document).ready(function() {
+            $("#backbnt").css("display", "none");
             $('#NextID').click(function() {
+
+                $("#backbnt").css("display", "contents");
+
                 $("#first-step").css("display", "none");
                 $("#second-step").css("display", "block");
 
@@ -285,6 +289,8 @@
             });
 
             $('#backbnt').click(function() {
+                $("#backbnt").css("display", "none");
+
                 $("#first-step").css("display", "block");
                 $("#second-step").css("display", "none");
 
