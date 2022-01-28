@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -36,14 +36,14 @@
                             <form id="loginForm" method="post">
                                 <div class="row g-0 ">
                                     <div class="col-10 col-lg-9 mx-auto text-center">
-                                        <div class="logo mt-4 mb-5 mb-md-0">
+                                        <div class="logo mt-4 mb-3 mb-md-0">
                                             <a href="index.html" title="vpoweru"><img class="logo-design" src="assets/images/login/main.png" alt="mainlogo"></a>
                                         </div>
                                     </div>
                                 </div>
-                                <h3 class="fw-bold mb-2 text-center mt-4">Register Now</h3>
+                                <h3 class="fw-bold mb-2 text-center mt-3">Register Now</h3>
                                 <p class="text-center mb-4">See what is going on with your business</p>
-                                <div class="d-flex wizard-section mx-auto mb-3">
+                                <div class="d-flex wizard-section mx-auto mb-2">
 
                                     <a id="backbnt-">
                                         <div class="circle-design">
@@ -70,10 +70,12 @@
                                 <div id="first-step">
                                     <div class="row">
                                         <div class="col-lg-6 col-sm-12">
-                                            <div class="ry-field-with-icon name mb-3">
+                                            <div class="ry-field-with-icon name mb-2">
                                                 <img src="assets/images/login/user.svg" alt="icon">
 
-                                                <label>Customer Name</label>
+                                                <label>Customer Name <span class="text-danger fw-bold">
+                                                    *
+                                                </span></label>
 
                                                 <div class="form-group">
                                                     <input class="border-none" type="text" placeholder="Enter Customer Name">
@@ -81,10 +83,12 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-sm-12">
-                                            <div class="ry-field-with-icon name mb-3">
+                                            <div class="ry-field-with-icon name mb-2">
                                                 <img src="assets/images/login/Vector.svg" alt="icon">
 
-                                                <label>Customer Email</label>
+                                                <label>Customer Email<span class="text-danger fw-bold">
+                                                    *
+                                                </span></label>
 
                                                 <div class="form-group">
                                                     <input class="border-none" type="text" placeholder="Enter Customer Email">
@@ -94,12 +98,44 @@
                                     </div>
 
 
+
+
+
                                     <div class="row">
                                         <div class="col-lg-6 col-sm-12">
-                                            <div class="ry-field-with-icon name mb-3">
+                                            <div class="ry-field-with-icon name mb-2">
+                                                <img src="assets/images/login/phone.svg" alt="icon">
+
+                                                <label>Phone Number<span class="text-danger fw-bold">
+                                                    *
+                                                </span></label>
+
+                                                <div class="form-group">
+                                                    <input class="border-none" type="text" placeholder="9255555566565">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12">
+                                            <div class="ry-field-with-icon name mb-2">
+                                                <img src="assets/images/login/meter.svg" alt="icon">
+
+                                                <label>MPAN</label>
+
+                                                <div class="form-group">
+                                                    <input class="border-none" type="text" placeholder="Meter Point Administration Number">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-12">
+                                            <div class="ry-field-with-icon name mb-2">
                                                 <img src="assets/images/login/password.svg" alt="icon">
 
-                                                <label>Password</label>
+                                                <label>Password<span class="text-danger fw-bold">
+                                                    *
+                                                </span></label>
 
                                                 <div class="form-group">
                                                     <input class="border-none" type="text" placeholder="Enter Password">
@@ -107,13 +143,58 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-sm-12">
-                                            <div class="ry-field-with-icon name mb-3">
+                                            <div class="ry-field-with-icon name mb-2">
                                                 <img src="assets/images/login/password.svg" alt="icon">
 
-                                                <label>Confirm Password</label>
+                                                <label>Confirm Password<span class="text-danger fw-bold">
+                                                    *
+                                                </span></label>
 
                                                 <div class="form-group">
                                                     <input class="border-none" type="text" placeholder="Confirm Password">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 col-sm-12">
+                                            <div class="ry-field-with-icon name mb-2">
+                                                <img src="assets/images/login/address.svg" alt="icon">
+
+                                                <label>Address<span class="text-danger fw-bold">
+                                                    *
+                                                </span></label>
+
+                                                <div class="form-group">
+                                                    <input class="border-none" type="text" placeholder="Address">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div style="display: none;" id="second-step">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-12">
+                                            <div class="ry-field-with-icon- name mb-2">
+                                                <!-- <img src="../assets/images/login/user.svg" alt="looginpage"> -->
+
+                                                <label>Peak demand in KWh</label>
+
+                                                <div class="form-group">
+                                                    <input class="border-none" type="text" placeholder="Estimated peak demand in KWh">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12">
+                                            <div class="ry-field-with-icon- name mb-2">
+                                                <!-- <img src="../assets/images/login/Vector.svg" alt="looginpage"> -->
+
+                                                <label>Minimum demand in KWh</label>
+
+                                                <div class="form-group">
+                                                    <input class="border-none" type="text" placeholder="Estimated minimum demand in KWh">
                                                 </div>
                                             </div>
                                         </div>
@@ -122,18 +203,41 @@
 
                                     <div class="row">
                                         <div class="col-lg-6 col-sm-12">
-                                            <div class="ry-field-with-icon name mb-3">
-                                                <img src="assets/images/login/phone.svg" alt="icon">
+                                            <div class="ry-field-with-icon- name mb-2">
 
-                                                <label>Phone Number</label>
+                                                <label>Annual demand in KWh</label>
 
                                                 <div class="form-group">
-                                                    <input class="border-none" type="text" placeholder="9255555566565">
+                                                    <input class="border-none" type="text" placeholder="Estimated annual demand in KWh">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-sm-12">
-                                            <div class="ry-field-with-icon- name mb-3">
+                                            <div class="ry-field-with-icon- name mb-2">
+
+                                                <label>Upward flexibility</label>
+
+                                                <div class="form-group">
+                                                    <input class="border-none" type="text" placeholder="Estimated Upward flexibility">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-12">
+                                            <div class="ry-field-with-icon- name mb-2">
+
+                                                <label>Downward flexibility</label>
+
+                                                <div class="form-group">
+                                                    <input class="border-none" type="text" placeholder="Estimated Downward flexibility">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12">
+                                            <div class="ry-field-with-icon- name mb-2">
 
                                                 <label>Flexibility Type</label>
 
@@ -152,94 +256,18 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div style="display: none;" id="second-step">
                                     <div class="row">
-                                        <div class="col-lg-6 col-sm-12">
-                                            <div class="ry-field-with-icon- name mb-3">
-                                                <!-- <img src="../assets/images/login/user.svg" alt="looginpage"> -->
+                                        <div class="col-lg-12 col-sm-12">
+                                            <div class="ry-field-with-icon name mb-2" style="border: none;">
 
-                                                <label>Peak demand in KWh</label>
-
-                                                <div class="form-group">
-                                                    <input class="border-none" type="text" placeholder="Estimated peak demand in KWh">
-                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6 col-sm-12">
-                                            <div class="ry-field-with-icon- name mb-3">
-                                                <!-- <img src="../assets/images/login/Vector.svg" alt="looginpage"> -->
 
-                                                <label>Minimum demand in KWh</label>
-
-                                                <div class="form-group">
-                                                    <input class="border-none" type="text" placeholder="Estimated minimum demand in KWh">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="row">
-                                        <div class="col-lg-6 col-sm-12">
-                                            <div class="ry-field-with-icon- name mb-3">
-
-                                                <label>Annual demand in KWh</label>
-
-                                                <div class="form-group">
-                                                    <input class="border-none" type="text" placeholder="Estimated annual demand in KWh">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-sm-12">
-                                            <div class="ry-field-with-icon- name mb-3">
-
-                                                <label>Upward flexibility</label>
-
-                                                <div class="form-group">
-                                                    <input class="border-none" type="text" placeholder="Estimated Upward flexibility">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="row">
-                                        <div class="col-lg-6 col-sm-12">
-                                            <div class="ry-field-with-icon- name mb-3">
-
-                                                <label>Downward flexibility</label>
-
-                                                <div class="form-group">
-                                                    <input class="border-none" type="text" placeholder="Estimated Downward flexibility">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-sm-12">
-                                            <div class="ry-field-with-icon- name mb-3">
-
-                                                <label>Add customer to specific group</label>
-
-                                                <div class="form-group">
-                                                    <div class="drop-btn">
-                                                        <select class="dropdown-select" onchange="document.getElementById('displayValue').value=this.options[this.selectedIndex].text; document.getElementById('idValue').value=this.options[this.selectedIndex].value;">
-                              <option></option>
-                              <option value="one">one</option>
-                              <option value="two">two</option>
-                              <option value="three">three</option>
-                            </select>
-                                                        <input class="drop-down-input" type="text" name="displayValue" id="displayValue" placeholder="Select Option" onfocus="this.select()" style="position:absolute;top:0px;left:0px;width:183px;width:180px\9; ">
-                                                        <input name="idValue" id="idValue" type="hidden">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
 
 
-                                <div class="row  mb-3">
+                                <div class="row">
                                     <div class="col-lg-12 col-sm-12 text-end btns">
                                         <a id="backbnt">
                                             <button class="btn back-btn mx-2" type="button"><img class="me-2" src="assets/images/login/back.svg" alt="backicon">Back</button>
@@ -256,7 +284,7 @@
                             </form>
                         </div>
 
-                        <p class="text-center text-muted mb-0">Already have an account?<a class="link-primary fw-bold mx-2" href="index.html">Login</a></p>
+                        <p class="text-center text-muted py-2">Already have an account?<a class="link-primary fw-bold mx-2" href="index.html">Login</a></p>
 
                     </div>
                 </div>
